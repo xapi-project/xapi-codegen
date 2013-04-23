@@ -1,0 +1,12 @@
+Name:        xapi-codegen
+Version:     0.2
+Synopsis:    xen-api code generator
+Authors:     Citrix
+License:     LGPL-2.1 with OCaml linking exception
+obuild-ver:  1
+
+Executable            gen_api
+  Path:               src
+  MainIs:             gen_api_main.ml
+  pp: camlp4o
+  BuildDepends:       stdext, rpclib, rpclib.syntax, xml-light2, uuid, http-svr, sexpr
